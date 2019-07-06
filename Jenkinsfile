@@ -4,7 +4,7 @@ pipeline {
 
     stages {
         stage('SCM Checkout'){
-          git 'https://github.com/apraka/jenkins_pipeline_hello'
+          git 'https://github.com/apraka/maven-project'
         }
   }
     {
