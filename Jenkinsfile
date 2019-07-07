@@ -11,7 +11,9 @@ pipeline {
     
     
     
-        stage ('Compile Stage') {
+        stage ('Compile Stage') 
+        { agent: label 'maven'}
+        {
 
             steps {
                 withMaven(maven : 'LocalMaven') 
